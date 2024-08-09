@@ -1,7 +1,10 @@
+# fly.toml app configuration file generated for supabase-grafana-plantiful on 2024-08-09T13:12:29-04:00
+#
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'supabase-grafana-metrics'
+app = 'supabase-grafana-plantiful'
+primary_region = 'iad'
 
 [build]
 
@@ -12,12 +15,12 @@ app = 'supabase-grafana-metrics'
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = false
+  auto_stop_machines = 'off'
   auto_start_machines = true
   min_machines_running = 1
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
+  memory = '2gb'
   cpu_kind = 'shared'
-  cpus = 1
+  cpus = 2
