@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for supabase-grafana-plantiful on 2024-08-09T13:12:29-04:00
+# fly.toml app configuration file generated for supabase-grafana-plantiful on 2024-08-09T13:59:22-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -21,6 +21,6 @@ primary_region = 'iad'
   processes = ['app']
 
 [[vm]]
-  memory = '2gb'
+  memory = '1gb'
   cpu_kind = 'shared'
   cpus = 2
